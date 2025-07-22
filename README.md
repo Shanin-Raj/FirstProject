@@ -10,9 +10,9 @@ This repository is a collection of my first projects as I learn Python, APIs, an
 ## How to Run These Projects
 
 1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/Shanin-Raj/FirstProject.git](https://github.com/Shanin-Raj/FirstProject.git)
-    cd FirstProject
+   ```bash
+    git clone [https://github.com/Shanin-Raj/My-Python-projects.git](https://github.com/Shanin-Raj/My-Python-projects.git)
+    cd My-Python-projects
     ```
 
 2.  **Create your `.env` file:**
