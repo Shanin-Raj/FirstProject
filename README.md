@@ -1,41 +1,37 @@
-# Historical Greeting Generator
+# My Python Learning Projects
 
-This is a simple Python script that generates a unique, one-sentence greeting based on a historical event that happened on the current day. It uses the Google Gemini API to generate the creative greeting.
+This repository is a collection of my first projects as I learn Python, APIs, and best practices for coding.
 
-This was my first project using an API and setting up a secure repository for GitHub.
+## Projects Included
 
-## Features
+* **`greetings.py`**: A script that uses the Google Gemini API to generate a unique greeting based on a historical event from the current date.
+* **`weather.py`**: A script that uses the OpenWeatherMap API to fetch and display the current weather for a specific city.
 
--   Gets the current date automatically.
--   Calls the Gemini API with a dynamic prompt.
--   Securely loads an API key from a `.env` file.
-
-## How to Run This Project
+## How to Run These Projects
 
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/Shanin-Raj/FirstProject.git](https://github.com/Shanin-Raj/FirstProject.git)
+    cd FirstProject
     ```
 
-2.  **Navigate into the directory:**
-    ```bash
-    cd FirstProject
+2.  **Create your `.env` file:**
+    Create a file named `.env` and add your API keys. You will need one for each project.
+    ```
+    GEMINI_API_KEY=YOUR_GEMINI_KEY_HERE
+    OPENWEATHER_API_KEY=YOUR_OPENWEATHER_KEY_HERE
     ```
 
 3.  **Install the required libraries:**
     ```bash
     pip install -r requirements.txt
     ```
-    *(Note: You will need to create a `requirements.txt` file for this command to work).*
 
-4.  **Create your `.env` file:**
-    Create a file named `.env` in the main project folder and add your API key to it:
-    ```
-    GEMINI_API_KEY=YOUR_OWN_API_KEY_HERE
-    ```
-
-5.  **Run the script!**
+4.  **Run a script!**
     ```bash
     python greetings.py
     ```
-
+    or
+    ```bash
+    python weather.py
+    ```
