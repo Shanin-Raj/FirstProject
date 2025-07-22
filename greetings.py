@@ -3,16 +3,15 @@
 A simple Python script to generate a unique greeting based on a historical
 event from the current date using the Gemini API.
 
-This version is secure for GitHub and loads the API key from a .env file.
 """
 
 # Import necessary libraries
 import os
 import requests
 import datetime
-from dotenv import load_dotenv # <-- NEW: Import the dotenv library
+from dotenv import load_dotenv 
 
-# --- NEW: Load environment variables from the .env file ---
+
 load_dotenv()
 
 def get_date_with_suffix(d):
@@ -26,9 +25,7 @@ def generate_greeting():
     Main function to get the date, call the Gemini API, and print the response.
     """
     try:
-        # --- Step 1: Get your API Key from the .env file ---
-        # The load_dotenv() function loaded the variables, and now we can
-        # access the API key just like we did in the very first version.
+        # --- Step 1: Load the API key from the .env file ---
         api_key = os.getenv("GEMINI_API_KEY")
 
         if not api_key:
